@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="46e45408-36c5-446a-98e0-0a9b19539dc6" >
+		<http:listener-connection host="localhost" port="8081" />
+	</http:listener-config>
+	<flow name="ctdemoFlow" doc:id="b9b84f10-e97d-4a7a-a0aa-de90c83d561a" >
+		<http:listener config-ref="HTTP_Listener_config" path="/ctdemo" doc:name="Listener" doc:id="e8272155-dbba-467c-a84c-7c2dd12992ed" />
+		<logger level="INFO" doc:name="Logger" doc:id="6a6fcf90-2937-4642-9dd6-b96fe91b0e34" message="ctdemo test"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="4a2b7297-62d4-4a7c-bd70-b58685a9ed65" />
+	</flow>
+</mule>

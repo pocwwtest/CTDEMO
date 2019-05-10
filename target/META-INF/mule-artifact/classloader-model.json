@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "artifactCoordinates": {
+    "groupId": "com.mycompany",
+    "artifactId": "ctdemo",
+    "version": "1.0.0-SNAPSHOT",
+    "type": "pom"
+  },
+  "dependencies": [
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.connectors",
+        "artifactId": "mule-http-connector",
+        "version": "0.9.0",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/connectors/mule-http-connector/0.9.0/mule-http-connector-0.9.0-mule-plugin.jar"
+    },
+    {
+      "artifactCoordinates": {
+        "groupId": "org.mule.connectors",
+        "artifactId": "mule-sockets-connector",
+        "version": "0.9.0",
+        "type": "jar",
+        "classifier": "mule-plugin"
+      },
+      "uri": "repository/org/mule/connectors/mule-sockets-connector/0.9.0/mule-sockets-connector-0.9.0-mule-plugin.jar"
+    }
+  ]
+}

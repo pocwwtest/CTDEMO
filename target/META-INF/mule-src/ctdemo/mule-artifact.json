@@ -1,0 +1,19 @@
+{
+  "domain": "default",
+  "configs": [
+    "ctdemo.xml"
+  ],
+  "redeploymentEnabled": true,
+  "name": "ctdemo",
+  "minMuleVersion": "4.0.0-rc",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
